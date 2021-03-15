@@ -94,7 +94,7 @@ function tableRender() {
 
     const resultElement= document.createElement('td');
     trElement.appendChild(resultElement);
-    if (allStudents[i].result == ' Fail') {
+    if (allStudents[i].result === ' Fail') {
       resultElement.style.backgroundColor='red';
 
     }else{
@@ -108,6 +108,7 @@ function tableRender() {
   tableElement.appendChild(btn);
   btn.setAttribute('onClick','clearTable()');
 }
+// eslint-disable-next-line no-unused-vars
 function clearTable() {
   tableElement.innerHTML='';
   localStorage.clear();
